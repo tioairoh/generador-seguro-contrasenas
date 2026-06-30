@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 950" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="950" fill="#f8f9fa"/>
+
+  <text x="350" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565c0">Diagrama de Flujo General</text>
+
+  <!-- Inicio -->
+  <ellipse cx="350" cy="70" rx="60" ry="25" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="350" y="75" text-anchor="middle" font-size="12" font-weight="bold">INICIO</text>
+
+  <!-- Linea -->
+  <line x1="350" y1="95" x2="350" y2="125" stroke="#333" stroke-width="2"/>
+  <polygon points="345,120 350,130 355,120" fill="#333"/>
+
+  <!-- Decision: Que modo? -->
+  <polygon points="350,160 470,210 350,260 230,210" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="350" y="207" text-anchor="middle" font-size="11" font-weight="bold">Seleccionar</text>
+  <text x="350" y="222" text-anchor="middle" font-size="11" font-weight="bold">Modo</text>
+
+  <!-- Rama Generar -->
+  <line x1="230" y1="210" x2="120" y2="210" stroke="#333" stroke-width="2"/>
+  <polygon points="125,205 115,210 125,215" fill="#333"/>
+  <text x="175" y="203" text-anchor="middle" font-size="10">Generar</text>
+
+  <rect x="30" y="150" width="90" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="75" y="172" text-anchor="middle" font-size="10">Configurar</text>
+
+  <line x1="75" y1="185" x2="75" y2="215" stroke="#333" stroke-width="2"/>
+  <polygon points="70,210 75,220 80,210" fill="#333"/>
+
+  <rect x="30" y="225" width="90" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="75" y="247" text-anchor="middle" font-size="10">Generar</text>
+
+  <line x1="75" y1="260" x2="75" y2="290" stroke="#333" stroke-width="2"/>
+  <polygon points="70,285 75,295 80,285" fill="#333"/>
+
+  <rect x="30" y="300" width="90" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="75" y="322" text-anchor="middle" font-size="10">Mostrar</text>
+  <text x="75" y="334" text-anchor="middle" font-size="10">Resultado</text>
+
+  <!-- Rama Passphrase -->
+  <line x1="470" y1="210" x2="580" y2="210" stroke="#333" stroke-width="2"/>
+  <polygon points="575,205 585,210 575,215" fill="#333"/>
+  <text x="525" y="203" text-anchor="middle" font-size="10">Passphrase</text>
+
+  <rect x="535" y="150" width="90" height="35" rx="5" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="580" y="172" text-anchor="middle" font-size="10">Elegir</text>
+  <text x="580" y="184" text-anchor="middle" font-size="10">Cantidad</text>
+
+  <line x1="580" y1="185" x2="580" y2="215" stroke="#333" stroke-width="2"/>
+  <polygon points="575,210 580,220 585,210" fill="#333"/>
+
+  <rect x="535" y="225" width="90" height="35" rx="5" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="580" y="247" text-anchor="middle" font-size="10">Generar</text>
+  <text x="580" y="259" text-anchor="middle" font-size="10">Passphrase</text>
+
+  <line x1="580" y1="260" x2="580" y2="290" stroke="#333" stroke-width="2"/>
+  <polygon points="575,285 580,295 585,285" fill="#333"/>
+
+  <rect x="535" y="300" width="90" height="35" rx="5" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="580" y="322" text-anchor="middle" font-size="10">Mostrar</text>
+  <text x="580" y="334" text-anchor="middle" font-size="10">Frase</text>
+
+  <!-- Rama Analizar -->
+  <line x1="350" y1="260" x2="350" y2="290" stroke="#333" stroke-width="2"/>
+  <polygon points="345,285 350,295 355,285" fill="#333"/>
+  <text x="360" y="278" text-anchor="middle" font-size="10">Analizar</text>
+
+  <rect x="300" y="310" width="100" height="35" rx="5" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="350" y="332" text-anchor="middle" font-size="10">Ingresar</text>
+  <text x="350" y="344" text-anchor="middle" font-size="10">Contrasena</text>
+
+  <line x1="350" y1="345" x2="350" y2="375" stroke="#333" stroke-width="2"/>
+  <polygon points="345,370 350,380 355,370" fill="#333"/>
+
+  <rect x="300" y="385" width="100" height="35" rx="5" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="350" y="403" text-anchor="middle" font-size="10">Analizar</text>
+
+  <line x1="350" y1="420" x2="350" y2="450" stroke="#333" stroke-width="2"/>
+  <polygon points="345,445 350,455 355,445" fill="#333"/>
+
+  <rect x="290" y="460" width="120" height="35" rx="5" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="350" y="478" text-anchor="middle" font-size="10">Mostrar</text>
+  <text x="350" y="490" text-anchor="middle" font-size="10">Resultados</text>
+
+  <!-- Union de ramas -->
+  <line x1="75" y1="335" x2="75" y2="550" stroke="#333" stroke-width="2"/>
+  <line x1="75" y1="550" x2="350" y2="550" stroke="#333" stroke-width="2"/>
+  <line x1="580" y1="335" x2="580" y2="550" stroke="#333" stroke-width="2"/>
+  <line x1="580" y1="550" x2="350" y2="550" stroke="#333" stroke-width="2"/>
+  <line x1="350" y1="495" x2="350" y2="550" stroke="#333" stroke-width="2"/>
+
+  <!-- Decision: Copiar? -->
+  <polygon points="350,585 470,635 350,685 230,635" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="350" y="632" text-anchor="middle" font-size="11" font-weight="bold">Copiar al</text>
+  <text x="350" y="647" text-anchor="middle" font-size="11" font-weight="bold">portapapeles?</text>
+
+  <line x1="230" y1="635" x2="170" y2="635" stroke="#333" stroke-width="2"/>
+  <polygon points="175,630 165,635 175,640" fill="#333"/>
+  <text x="200" y="628" text-anchor="middle" font-size="10">Si</text>
+
+  <rect x="20" y="615" width="140" height="35" rx="5" fill="#e8eaf6" stroke="#283593" stroke-width="1.5"/>
+  <text x="90" y="637" text-anchor="middle" font-size="10">Copiar al</text>
+  <text x="90" y="649" text-anchor="middle" font-size="10">portapapeles</text>
+
+  <line x1="90" y1="650" x2="90" y2="750" stroke="#333" stroke-width="2"/>
+  <line x1="470" y1="635" x2="530" y2="635" stroke="#333" stroke-width="2"/>
+  <polygon points="525,630 535,635 525,640" fill="#333"/>
+  <text x="500" y="628" text-anchor="middle" font-size="10">No</text>
+
+  <line x1="530" y1="635" x2="530" y2="750" stroke="#333" stroke-width="2"/>
+  <line x1="90" y1="750" x2="530" y2="750" stroke="#333" stroke-width="2"/>
+  <line x1="310" y1="750" x2="310" y2="780" stroke="#333" stroke-width="2"/>
+
+  <!-- Decision: Otra operacion? -->
+  <polygon points="310,815 410,855 310,895 210,855" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="310" y="852" text-anchor="middle" font-size="11" font-weight="bold">Otra</text>
+  <text x="310" y="867" text-anchor="middle" font-size="11" font-weight="bold">operacion?</text>
+
+  <!-- No a Fin -->
+  <line x1="410" y1="855" x2="470" y2="855" stroke="#333" stroke-width="2"/>
+  <text x="440" y="848" text-anchor="middle" font-size="10">No</text>
+
+  <ellipse cx="530" cy="855" rx="50" ry="22" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="530" y="860" text-anchor="middle" font-size="11" font-weight="bold">FIN</text>
+
+  <!-- Si a volver a seleccionar modo -->
+  <line x1="210" y1="855" x2="120" y2="855" stroke="#333" stroke-width="2"/>
+  <line x1="120" y1="855" x2="120" y2="210" stroke="#333" stroke-width="2"/>
+  <polygon points="115,215 120,205 125,215" fill="#333"/>
+  <text x="140" y="530" text-anchor="middle" font-size="10" fill="#f57f17" font-weight="bold">Si</text>
+</svg>

@@ -1,0 +1,3 @@
+# No se requieren dependencias externas
+# tkinter viene incluido con Python
+# Solo es necesario Python 3.x

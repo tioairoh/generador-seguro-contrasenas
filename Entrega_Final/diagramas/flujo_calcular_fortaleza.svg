@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 750" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="450" height="750" fill="#f8f9fa"/>
+
+  <text x="225" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">Flujo: Calcular Fortaleza</text>
+
+  <ellipse cx="225" cy="65" rx="55" ry="20" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="225" y="70" text-anchor="middle" font-size="11" font-weight="bold">INICIO</text>
+
+  <line x1="225" y1="85" x2="225" y2="115" stroke="#333" stroke-width="2"/>
+  <polygon points="220,110 225,120 230,110" fill="#333"/>
+
+  <rect x="80" y="120" width="290" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="225" y="142" text-anchor="middle" font-size="11">Recibir contrasena</text>
+
+  <line x1="225" y1="155" x2="225" y2="185" stroke="#333" stroke-width="2"/>
+  <polygon points="220,180 225,190 230,180" fill="#333"/>
+
+  <rect x="60" y="190" width="330" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="225" y="212" text-anchor="middle" font-size="11">Contar caracteres por tipo (may, min, num, sim)</text>
+
+  <line x1="225" y1="225" x2="225" y2="255" stroke="#333" stroke-width="2"/>
+  <polygon points="220,250 225,260 230,250" fill="#333"/>
+
+  <rect x="60" y="260" width="330" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="225" y="282" text-anchor="middle" font-size="11">Calcular tamanio del pool (T)</text>
+
+  <line x1="225" y1="295" x2="225" y2="325" stroke="#333" stroke-width="2"/>
+  <polygon points="220,320 225,330 230,320" fill="#333"/>
+
+  <rect x="60" y="330" width="330" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="225" y="352" text-anchor="middle" font-size="11">H = L x log2(T)  (Entropia)</text>
+
+  <line x1="225" y1="365" x2="225" y2="395" stroke="#333" stroke-width="2"/>
+  <polygon points="220,390 225,400 230,390" fill="#333"/>
+
+  <!-- Decision 1: H >= 80? -->
+  <polygon points="225,425 360,480 225,535 90,480" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="225" y="477" text-anchor="middle" font-size="11" font-weight="bold">H &gt;= 80 bits?</text>
+
+  <line x1="360" y1="480" x2="410" y2="480" stroke="#333" stroke-width="2"/>
+  <polygon points="405,475 415,480 405,485" fill="#333"/>
+  <text x="385" y="473" text-anchor="middle" font-size="10" fill="#2e7d32">Si</text>
+
+  <rect x="395" y="460" width="50" height="40" rx="5" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="420" y="480" text-anchor="middle" font-size="9" font-weight="bold">Muy</text>
+  <text x="420" y="495" text-anchor="middle" font-size="9" font-weight="bold">fuerte</text>
+
+  <line x1="90" y1="480" x2="40" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="65" y="473" text-anchor="middle" font-size="10">No</text>
+
+  <!-- Decision 2: H >= 60? -->
+  <polygon points="40,515 140,555 40,595 -60,555" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="40" y="552" text-anchor="middle" font-size="10" font-weight="bold">H &gt;= 60?</text>
+
+  <line x1="140" y1="555" x2="180" y2="555" stroke="#333" stroke-width="2"/>
+  <polygon points="175,550 185,555 175,560" fill="#333"/>
+  <text x="160" y="548" text-anchor="middle" font-size="9" fill="#2e7d32">Si</text>
+
+  <rect x="170" y="535" width="50" height="40" rx="5" fill="#a5d6a7" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="195" y="555" text-anchor="middle" font-size="9" font-weight="bold">Fuerte</text>
+
+  <line x1="-60" y1="555" x2="-100" y2="555" stroke="#333" stroke-width="2"/>
+  <text x="-80" y="548" text-anchor="middle" font-size="9">No</text>
+
+  <!-- Decision 3: H >= 36? -->
+  <polygon points="-100,590 0,630 -100,670 -200,630" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="-100" y="627" text-anchor="middle" font-size="10" font-weight="bold">H &gt;= 36?</text>
+
+  <line x1="0" y1="630" x2="40" y2="630" stroke="#333" stroke-width="2"/>
+  <polygon points="35,625 45,630 35,635" fill="#333"/>
+  <text x="20" y="623" text-anchor="middle" font-size="9" fill="#2e7d32">Si</text>
+
+  <rect x="30" y="610" width="60" height="40" rx="5" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="60" y="630" text-anchor="middle" font-size="9" font-weight="bold">Aceptable</text>
+
+  <line x1="-200" y1="630" x2="-240" y2="630" stroke="#333" stroke-width="2"/>
+  <text x="-220" y="623" text-anchor="middle" font-size="9">No</text>
+
+  <rect x="-260" y="610" width="50" height="40" rx="5" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="-235" y="630" text-anchor="middle" font-size="9" font-weight="bold">Debil</text>
+
+  <!-- Unir todas las salidas -->
+  <line x1="420" y1="500" x2="420" y2="680" stroke="#333" stroke-width="2"/>
+  <line x1="195" y1="575" x2="195" y2="680" stroke="#333" stroke-width="2"/>
+  <line x1="60" y1="650" x2="60" y2="680" stroke="#333" stroke-width="2"/>
+  <line x1="-235" y1="650" x2="-235" y2="680" stroke="#333" stroke-width="2"/>
+
+  <line x1="-235" y1="680" x2="420" y2="680" stroke="#333" stroke-width="2"/>
+  <line x1="225" y1="680" x2="225" y2="700" stroke="#333" stroke-width="2"/>
+  <polygon points="220,695 225,705 230,695" fill="#333"/>
+
+  <rect x="70" y="705" width="310" height="35" rx="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="225" y="727" text-anchor="middle" font-size="11">Devolver (nivel, color)</text>
+
+  <ellipse cx="225" cy="735" rx="0" ry="0"/>
+</svg>
